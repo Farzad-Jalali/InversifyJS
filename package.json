@@ -11,6 +11,7 @@
   "scripts": {
     "pretest": "tslint --project . && gulp",
     "test": "nyc --require ts-node/register mocha test/**/*.test.ts --reporter spec --retries 3 --require 'node_modules/reflect-metadata/Reflect.js' --exit",
+    "test:browser": "karma start",
     "publish-please": "publish-please",
     "prepublish": "publish-please guard",
     "update": "updates --update --minor && npm install",
